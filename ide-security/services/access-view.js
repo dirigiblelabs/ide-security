@@ -13,7 +13,7 @@ exports.getView = function() {
 			"id":"access",
 			"name":"Access",
 			"factory":"frame",
-			"region":"center-bottom",
+			"region":"center-middle",
 			"label":"Access",
 			"link":"../ide-security/views/access/index.html"
 	};

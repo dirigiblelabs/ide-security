@@ -13,7 +13,7 @@ exports.getView = function() {
 			"id":"roles",
 			"name":"Roles",
 			"factory":"frame",
-			"region":"center-bottom",
+			"region":"center-middle",
 			"label":"Roles",
 			"link":"../ide-security/views/roles/index.html"
 	};
