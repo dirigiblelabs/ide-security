@@ -1,15 +1,16 @@
-# Jobs Plugin for Eclipse Dirigible
+# Security Plugin for Eclipse Dirigible
 
 [![Eclipse License](http://img.shields.io/badge/license-Eclipse-brightgreen.svg)](LICENSE)
-[![GitHub contributors](https://img.shields.io/github/contributors/dirigiblelabs/ide-preview.svg)](https://github.com/dirigiblelabs/ide-preview/graphs/contributors)
+[![GitHub contributors](https://img.shields.io/github/contributors/dirigiblelabs/ide-security.svg)](https://github.com/dirigiblelabs/ide-preview/graphs/contributors)
 
 ## Overview
 
-Jobs Plugin for the [Eclipse Dirigible](https://github.com/eclipse/dirigible) WebIDE v3.x and above.
+Security Plugin for the [Eclipse Dirigible](https://github.com/eclipse/dirigible) WebIDE v3.x and above.
 
 Build the [Eclipse Dirigible](https://github.com/eclipse/dirigible), deploy on e.g. Tomcat Web Container and go to location:
 
-> http://localhost:8080/services/v3/web/ide-jobs/jobs.html
+> http://localhost:8080/services/v3/web/ide-security/views/access/index.html
+> http://localhost:8080/services/v3/web/ide-security/views/roles/index.html
 
 ## License
 
