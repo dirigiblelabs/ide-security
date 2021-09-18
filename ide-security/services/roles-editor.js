@@ -8,15 +8,14 @@
  * Contributors:
  *   SAP - initial API and implementation
  */
-exports.getEditor = function() {
-	var editor = {
-			"id":"roles",
-			"name":"Roles",
-			"factory":"frame",
-			"region":"center-top",
-			"label":"Roles",
-			"link":"../ide-security/editors/roles/editor.html",
-			"contentTypes":["application/json+roles"]
+exports.getEditor = function () {
+	return {
+		"id": "roles",
+		"name": "Roles",
+		"factory": "frame",
+		"region": "center-top",
+		"label": "Roles",
+		"link": "../ide-security/editors/roles/editor.html",
+		"contentTypes": ["application/json+roles"]
 	};
-	return editor;
 };

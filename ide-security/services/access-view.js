@@ -8,14 +8,13 @@
  * Contributors:
  *   SAP - initial API and implementation
  */
-exports.getView = function() {
-	var view = {
-			"id":"access",
-			"name":"Access",
-			"factory":"frame",
-			"region":"center-middle",
-			"label":"Access",
-			"link":"../ide-security/views/access/index.html"
+exports.getView = function () {
+	return {
+		"id": "access",
+		"name": "Access",
+		"factory": "frame",
+		"region": "center-middle",
+		"label": "Access",
+		"link": "../ide-security/views/access/index.html"
 	};
-	return view;
 }
