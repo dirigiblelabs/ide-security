@@ -8,13 +8,17 @@
  * Contributors:
  *   SAP - initial API and implementation
  */
-exports.getView = function () {
-	return {
-		"id": "access",
-		"name": "Access",
-		"factory": "frame",
-		"region": "center-middle",
-		"label": "Access",
-		"link": "../ide-security/views/access/index.html"
-	};
+
+const viewData = {
+	id: "access",
+	factory: "frame",
+	region: "bottom",
+	label: "Access",
+	link: "../ide-security/views/access/index.html"
+};
+
+if (typeof exports !== 'undefined') {
+	exports.getView = function () {
+		return viewData;
+	}
 }

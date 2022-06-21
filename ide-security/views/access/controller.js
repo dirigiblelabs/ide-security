@@ -8,11 +8,17 @@
  * Contributors:
  *   SAP - initial API and implementation
  */
-angular.module('access', [])
-	.controller('AccessController', ['$scope', '$http', function ($scope, $http) {
 
-		$http.get('/services/v4/ops/security/access').then(function (response) {
-			$scope.accessList = response.data;
-		});
+const accessView = angular.module('access', ['ideUI', 'ideView']);
 
-	}]);
+accessView.config(["messageHubProvider", function (messageHubProvider) {
+	messageHubProvider.eventIdPrefix = 'access-view';
+}]);
+
+accessView.controller('AccessController', ['$scope', '$http', function ($scope, $http) {
+
+	$http.get('/services/v4/ops/security/access').then(function (response) {
+		$scope.accessList = response.data;
+	});
+
+}]);
