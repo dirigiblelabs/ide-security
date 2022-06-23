@@ -18,7 +18,7 @@ accessView.config(["messageHubProvider", function (messageHubProvider) {
 accessView.controller('AccessController', ['$scope', '$http', function ($scope, $http) {
 
 	$http.get('/services/v4/ops/security/access').then(function (response) {
-		$scope.accessList = response.data;
+		$scope.list = response.data;
 	});
 
 }]);

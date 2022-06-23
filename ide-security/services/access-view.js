@@ -14,7 +14,7 @@ const viewData = {
 	factory: "frame",
 	region: "bottom",
 	label: "Access",
-	link: "../ide-security/views/access/index.html"
+	link: "../ide-security/views/access.html"
 };
 
 if (typeof exports !== 'undefined') {

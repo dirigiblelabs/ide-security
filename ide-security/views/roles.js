@@ -18,7 +18,7 @@ rolesView.config(["messageHubProvider", function (messageHubProvider) {
 rolesView.controller('RolesController', ['$scope', '$http', function ($scope, $http) {
 
 	$http.get('/services/v4/ops/security/roles').then(function (response) {
-		$scope.accessList = response.data;
+		$scope.list = response.data;
 	});
 
 }]);
