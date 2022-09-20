@@ -1,7 +1,7 @@
 # Security Plugin for Eclipse Dirigible
 
 [![Eclipse License](http://img.shields.io/badge/license-Eclipse-brightgreen.svg)](LICENSE)
-[![GitHub contributors](https://img.shields.io/github/contributors/dirigiblelabs/ide-security.svg)](https://github.com/dirigiblelabs/ide-preview/graphs/contributors)
+[![GitHub contributors](https://img.shields.io/github/contributors/dirigiblelabs/ide-security.svg)](https://github.com/dirigiblelabs/ide-security/graphs/contributors)
 
 ## Overview
 

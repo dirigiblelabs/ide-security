@@ -156,9 +156,9 @@ angular.module('page', [])
         $scope.$watch(function () {
             let roles = angular.toJson($scope.roles);
             if (contents !== roles) {
-                messageHub.post({ resourcePath: $scope.file, isDirty: true }, 'ide-core.setEditorDirty');
+                messageHub.post({ resourcePath: $scope.file, isDirty: true }, 'resources-core.setEditorDirty');
             } else {
-                messageHub.post({ resourcePath: $scope.file, isDirty: false }, 'ide-core.setEditorDirty');
+                messageHub.post({ resourcePath: $scope.file, isDirty: false }, 'resources-core.setEditorDirty');
             }
         });
 
