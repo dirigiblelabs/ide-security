@@ -202,9 +202,9 @@ angular.module('page', [])
             let accessContents = serializeAccess();
             let access = JSON.stringify(accessContents);
             if (contents !== access) {
-                messageHub.post({ resourcePath: $scope.file, isDirty: true }, 'resources-core.setEditorDirty');
+                messageHub.post({ resourcePath: $scope.file, isDirty: true }, 'ide-core.setEditorDirty');
             } else {
-                messageHub.post({ resourcePath: $scope.file, isDirty: false }, 'resources-core.setEditorDirty');
+                messageHub.post({ resourcePath: $scope.file, isDirty: false }, 'ide-core.setEditorDirty');
             }
         });
 
