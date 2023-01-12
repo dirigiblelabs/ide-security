@@ -9,7 +9,7 @@
  *   SAP - initial API and implementation
  */
 angular.module('page', ["ideUI", "ideView"])
-    .controller('PageController', function ($scope, messageHub, ViewParameters) {
+    .controller('PageController', function ($scope, messageHub, $window, ViewParameters) {
         let contents;
         let csrfToken;
         $scope.errorMessage = 'Аn unknown error was encountered. Please see console for more information.';
@@ -32,6 +32,11 @@ angular.module('page', ["ideUI", "ideView"])
             { value: 'CMIS', label: 'CMIS' },
         ];
         $scope.editConstraintIndex = 0;
+
+        angular.element($window).bind("focus", function () {
+            messageHub.setFocusedEditor($scope.dataParameters.file);
+            messageHub.setStatusCaret('');
+        });
 
         function getResource(resourcePath) {
             let xhr = new XMLHttpRequest();
@@ -97,6 +102,10 @@ angular.module('page', ["ideUI", "ideView"])
                 saveContents(contents);
             }
         };
+
+        messageHub.onEditorFocusGain(function (msg) {
+            if (msg.resourcePath === $scope.dataParameters.file) messageHub.setStatusCaret('');
+        });
 
         messageHub.onDidReceiveMessage(
             "editor.file.save.all",
